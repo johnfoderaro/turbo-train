@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Mocha Tests | Turbo Train</title>
+	<link rel="stylesheet" href="/node_modules/mocha/mocha.css">
+</head>
+
+<body>
+	<h1>Front-End Mocha Tests with es2015 Modules</h1>
+	<hr>
+	<div id="mocha"></div>
+	<script src="/node_modules/mocha/mocha.js"></script>
+	<script>
+		mocha.setup('bdd')
+	</script>
+
+	<!-- add transpiled tests from ./test/browser  -->
+	<script src="/test/browser/entrance.js"></script>
+	<!-- end tests -->
+
+	<script>
+		mocha.run();
+	</script>
+</body>
+
+</html>
