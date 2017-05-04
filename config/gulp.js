@@ -8,7 +8,7 @@ module.exports = {
 		server: {
 			baseDir: '.',
 			routes: {
-				'/build': 'build',
+				'/public': 'public',
 				'/test': 'test'
 			}
 		}
@@ -31,10 +31,10 @@ module.exports = {
 		],
 		build: {
 			src: './src/**/*',
-			dest: './build',
+			dest: './public',
 			del: [
-				'./build/lib/',
-				'./build/js/app.js',
+				'./public/lib/',
+				'./public/js/app.js',
 			]
 		}
 	}
